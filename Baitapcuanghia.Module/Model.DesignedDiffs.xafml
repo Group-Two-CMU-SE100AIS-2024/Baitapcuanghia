@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="Baitapcuanghia">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="@3e2be682-1bc7-4ba0-b1bf-1ef5ea6aa81d" Caption="Quản lý" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="@27ec0453-7a46-4abf-a5b4-16859d901596" Caption="Sản phẩm" ViewId="Sanpham_ListView" IsNewNode="True" />
+          <Item Id="@2ba7fe8c-8bc3-41c6-9d29-fec293e37211" Caption="Dòng nhập" ViewId="Dongnhap_ListView" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="@50f887b3-e6ae-439a-9507-c38025198911" Caption="Nhập kho" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="@3542c2a8-53c4-404b-8308-4206011c3924" ViewId="Nhacungcap_ListView" Caption="Nhà cung cấp" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="24.1.7.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+    <ListView Id="Dongnhap_ListView" AllowEdit="True" NewItemRowPosition="Top" />
+    <ListView Id="Nhacungcap_ListView" NewItemRowPosition="Top" />
+    <ListView Id="NhomSP_ListView" AllowEdit="True" NewItemRowPosition="Top" />
+    <ListView Id="Phieuchi_ListView" AllowEdit="True" MasterDetailMode="ListViewOnly" NewItemRowPosition="Top" />
+    <ListView Id="Phieunhap_ListView" AllowEdit="True" NewItemRowPosition="Top" />
+    <ListView Id="Sanpham_ListView" NewItemRowPosition="Top" AllowEdit="True" />
+  </Views>
+</Application>
